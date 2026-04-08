@@ -4,7 +4,7 @@ type student={
     age:number,
     score: number,
 };
-const studentList:student[]=[
+const Students:Array<student>=[
     {
     Name:"Ali",
     lastName:"Alizada",
@@ -23,4 +23,19 @@ const studentList:student[]=[
     age:33,
     score:89,
     },
+    {
+    Name:"Muhammad Ali",
+    lastName:"Qayomi",
+    age:54,
+    score:69,
+    },
+    {
+    Name:"Wafa Ali",
+    lastName:"Rahimi",
+    age:23,
+    score:98,
+    },
 ]
+
+
+const ArrayList:[string,number,boolean,number]=["Ahmad",43,false,45,];
