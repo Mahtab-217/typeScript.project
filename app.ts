@@ -40,32 +40,48 @@
 
 // const ArrayList:[string,number,boolean,number]=["Ahmad",43,false,45,];
 
-
+interface Human {
+     id:number;
+    name:string;
+    lastName:string;
+    age?:number;
+    score:number|string;
+    passed:boolean;
+}
 
 
 const number1:[number,number,number,number,number]=[5,6,7,8,9]
 const numbers:number[]=[1,2,3,4,8];
-
-const person1:{
+type people ={
     id:number;
     name:string;
     lastName:string;
-    age:number;
     score:number;
     passed:boolean;
-}={
+}
+const person1:Human={
     id:1,
     name:"Ahmad",
     lastName:"Alizada",
     age:23,
-    score:99,
+    score:"99",
     passed:true,
 }
-const person2={
-    id:1,
-    name:"Ahmad",
-    lastName:"Alizada",
-    age:23,
-    score:99,
+const person2:Human={
+    id:2,
+    name:"Ali",
+    lastName:"Raha",
+    age:43,
+    score:59,
     passed:true,
 }
+const person3:Human={
+    id:3,
+    name:"Layla",
+    lastName:"Nori",
+    age:24,
+    score:79,
+    passed:true,
+}
+type status=boolean;
+const isMarried:status=true;
