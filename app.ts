@@ -44,4 +44,28 @@
 
 
 const number1:[number,number,number,number,number]=[5,6,7,8,9]
-const numbers:number[]=[1,2,3,4]
+const numbers:number[]=[1,2,3,4,8];
+
+const person1:{
+    id:number;
+    name:string;
+    lastName:string;
+    age:number;
+    score:number;
+    passed:boolean;
+}={
+    id:1,
+    name:"Ahmad",
+    lastName:"Alizada",
+    age:23,
+    score:99,
+    passed:true,
+}
+const person2={
+    id:1,
+    name:"Ahmad",
+    lastName:"Alizada",
+    age:23,
+    score:99,
+    passed:true,
+}
