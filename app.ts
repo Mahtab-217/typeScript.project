@@ -118,3 +118,30 @@ const employee1:Employee={
     id: 1,
     name: "Ali",
 }
+
+
+interface Human{
+    age: number,
+    name: string,
+
+}
+
+interface students extends Human{
+  id:number,
+   grade: number,
+}
+const studetn1:students[]=
+[
+    {
+    id:1,
+    name:"Alina",
+    age:15,
+    grade: 7,
+},
+    {
+    id:2,
+    name:"Layla",
+    age:18,
+    grade: 12,
+}
+]
