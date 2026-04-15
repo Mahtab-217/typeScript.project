@@ -106,17 +106,25 @@
 //    price:25000,
 // }
 
-interface person{
+// interface person{
+//     name:string,
+//     id: number,
+// }
+// interface Employee extends person{
+//     job: string,
+// }
+type person={
     name:string,
-    id: number,
+    id:number,
 }
-interface Employee extends person{
-    job: string,
+type Employee= person &{
+    job:string,
+
 }
 const employee1:Employee={
     job:"Developer",
-    id: 1,
     name: "Ali",
+    id:1,
 }
 
 
@@ -149,8 +157,8 @@ const studetn1:students[]=
 
 
 type Animal={
-    id:number,
-    name: string,
+    id?:number,
+    name?: string,
     age: number,
 }
 type Deer = Animal &{
@@ -163,4 +171,36 @@ const Deer1:Deer={
     age:4,
     shakh:true,
     color:"red",
+}
+
+
+interface People{
+   readonly id:number,
+    readonly name: string,
+    age: number,
+    graduated: boolean,
+}
+const HastiInfo:People={
+    id:1,
+    name:"Hasti",
+    age:43,
+    graduated:false,
+}
+// HastiInfo.id=2;
+// HastiInfo.name="Muhammad";
+// console.log(HastiInfo)
+
+
+function getValues(arr:number[]):number{
+    return arr[0];
+}
+getValues([89,98,44,53])
+
+interface Peo<T>{
+    name:T;
+    id: T;
+}
+const Person3:Peo={
+    name:"Freshta",
+    id:2,
 }
