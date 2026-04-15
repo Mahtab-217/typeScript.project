@@ -144,4 +144,23 @@ const studetn1:students[]=
     age:18,
     grade: 12,
 }
-]
+];
+
+
+
+type Animal={
+    id:number,
+    name: string,
+    age: number,
+}
+type Deer = Animal &{
+    shakh:boolean,
+    color: string,
+}
+const Deer1:Deer={
+    id:1,
+    name: "deer",
+    age:4,
+    shakh:true,
+    color:"red",
+}
